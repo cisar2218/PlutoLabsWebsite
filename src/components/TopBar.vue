@@ -3,7 +3,7 @@
     <!-- Company Logo -->
     <div class="logo">
       <!-- replace with png -->
-      <img src="@/assets/logo.svg" alt="Company Logo" />
+      <img src="@/assets/white_logo.svg" alt="Company Logo" />
       <span class="company-name">Pluto Labs</span>
     </div>
 

@@ -5,7 +5,7 @@ import CardTeamMember from '../../components/CardTeamMember.vue'
 <template>
   <CardTeamMember
     name="Dušan Jánsky"
-    image="/logo.svg"
+    image="/white_logo.svg"
     position="Developer, co-founder"
     description="Developer focused on cybersecurity and blockchain."
     link="https://www.github.com/cisar2218"

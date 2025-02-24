@@ -5,7 +5,7 @@ import CardTeamMember from '../../components/CardTeamMember.vue'
 <template>
   <CardTeamMember
     name="Rostislav Litovkin"
-    image="/logo.svg"
+    image="/white_logo.svg"
     position="CEO"
     description="Blockchain developer and enthusiast."
     link="https://www.linkedin.com/in/janesmith"

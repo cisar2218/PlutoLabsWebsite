@@ -1,10 +1,11 @@
 <template>
   <header class="topbar">
     <!-- Company Logo -->
-    <div class="logo">
-      <!-- replace with png -->
-      <img src="@/assets/white_logo.svg" alt="Company Logo" />
-      <span class="company-name">Pluto Labs</span>
+
+       <div class="logo">
+         <!-- replace with png -->
+         <img src="@/assets/white_logo.svg" alt="Company Logo" />
+         <span class="company-name">Pluto Labs</span>
     </div>
 
     <nav class="nav-links">
@@ -23,14 +24,15 @@
   top: 0; /* Aligns it to the top of the page */
   left: 0; /* Aligns it to the left of the page */
   width: 100%; /* Makes the navbar span the entire width */
+  padding: 1rem 2rem;
   z-index: 1000; /* Ensures the navbar stays on top of other elements */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   background-color: #282c34; /* Dark background */
   color: white;
 }
+
 
 .logo {
   display: flex;

@@ -6,11 +6,11 @@ import TeamSection from '../components/TeamSection.vue'
   <div class="about">
     <h1>Mission</h1>
     <p>
-      something something something something something something something something something
-      something something something something something something something something something
-      something something something something something something something something something
-      something something something something something something something something something
-      something something something something something something something something something
+      something something something something something something something
+      something something something something something something something
+      something something something something something something something
+      something something something something something something something
+      something something something something something something something
       something something something something something something something
     </p>
 
@@ -30,7 +30,7 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 100px 50px 0 50px;
+  padding: 64px 50px 0 50px;
   /* align-items: flex-start; */
 }
 

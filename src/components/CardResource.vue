@@ -1,11 +1,16 @@
 <template>
   <div class="card">
-    <div class="card-icon">
-      <slot name="icon"></slot>
-      <!-- Slot for the icon -->
+    <div class="card-header">
+      <div class="card-icon">
+        <slot name="icon"></slot>
+        <!-- Slot for the icon -->
+      </div>
     </div>
-    <h3 class="card-title">{{ title }}</h3>
-    <p class="card-text">{{ text }}</p>
+
+    <div class="card-botton">
+      <h3 class="card-title">{{ title }}</h3>
+      <p class="card-text">{{ text }}</p>
+    </div>
   </div>
 </template>
 
@@ -33,7 +38,17 @@ export default {
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 200px;
+  width: 40%;
+}
+
+.card-header {
+  height: 50%;
+  width: 100%;
+}
+
+.card-botton {
+  height: 50%;
+  width: 100%;
 }
 
 .card-icon {

@@ -4,7 +4,7 @@ import TopBar from './components/TopBar.vue'
 </script>
 
 <template>
-  <div id="app">
+  <div id="app-container">
     <TopBar />
     <RouterView />
   </div>
@@ -16,9 +16,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#app {
+#app-container {
+  padding-top: 64px;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centers child horizontally */
+  width: 100%;
 }
 
 @media (min-width: 1024px) {

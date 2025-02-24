@@ -46,13 +46,13 @@ import CardResource from '@/components/CardResource.vue'
   /* align-items: flex-start; */
 }
 
-
-html, body, #app {
+html,
+body,
+#app {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 
 .list {
   display: flex;
@@ -78,8 +78,7 @@ html, body, #app {
   padding: 2rem;
 }
 
-
-@media (min-width: 512px) {
+@media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;

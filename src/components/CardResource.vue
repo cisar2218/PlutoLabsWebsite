@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <a :href="link" target="_blank" rel="noopener noreferrer" class="card">
     <div class="card-header">
       <div class="card-icon">
         <slot name="icon"></slot>
@@ -11,7 +11,7 @@
       <h3 class="card-title">{{ title }}</h3>
       <p class="card-text">{{ text }}</p>
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">
@@ -23,6 +23,10 @@ export default {
       required: true,
     },
     text: {
+      type: String,
+      required: true,
+    },
+    link: {
       type: String,
       required: true,
     },
@@ -38,21 +42,46 @@ export default {
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 40%;
+  height: 100%;
+  width: 20rem;
+}
+
+.card:hover {
+  background-color: var(--vt-c-indigo);
 }
 
 .card-header {
-  height: 50%;
-  width: 100%;
-}
-
-.card-botton {
-  height: 50%;
-  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-icon {
-  font-size: 32px;
-  margin-bottom: 8px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.card-bottom {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-text {
+  min-height: 6rem;
+  display: flex;
+  align-items: flex-start;
 }
 </style>

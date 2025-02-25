@@ -15,7 +15,16 @@ import CardDan from '../components/team/CardDan.vue'
 <style scoped>
 .team-members {
   display: flex;
-  flex-direction: row; /* Stack items vertically */
-  gap: 20px; /* Space between each item */
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .team-members {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 </style>

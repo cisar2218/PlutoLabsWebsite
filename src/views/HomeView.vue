@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="services">
+  <div class="page">
     <h1>Services</h1>
 
     <div class="container">
@@ -17,11 +17,8 @@
 </template>
 
 <style scoped>
-.services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.page {
+  gap: 2rem;
 }
 
 .card-content {
@@ -36,14 +33,14 @@
 }
 
 .container {
-  width: 50vw; /* Adjust width as needed */
-  height: 300px;
+  width: 50vw;
+  /* Adjust width as needed */
+  height: 1000px !important;
   border: 1px solid #ccc;
 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffffa4;
   display: flex;
   flex-direction: row;
 }

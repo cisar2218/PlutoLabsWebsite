@@ -9,23 +9,18 @@ import CardResource from '@/components/CardResource.vue'
     <h1>PlutoFramework</h1>
 
     <div class="list">
-      <CardResource
-        class="resource-card"
-        title="Getting Started"
-        text="Get started by visiting the official documentation..."
-      >
+      <CardResource class="resource-card" title="Getting Started" link="https://plutolabs.gitbook.io/plutoframework"
+        text="Get started by visiting the official documentation...">
         <template #icon>
-          <IconDocumentation class="icon" />
+          <IconDocumentation />
         </template>
       </CardResource>
 
-      <CardResource
-        class="resource-card"
-        title="PlutoFramework Codebase"
-        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source."
-      >
+      <CardResource class="resource-card" title="PlutoFramework Codebase"
+        link="https://github.com/RostislavLitovkin/plutoframework"
+        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. ||| Are you ready? Use and Explore Pluto FrameWork. It's Open Source.">
         <template #icon>
-          <IconGithub class="icon" />
+          <IconGithub />
         </template>
       </CardResource>
     </div>
@@ -58,24 +53,21 @@ body,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
   width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .resource-card {
-  flex: 1 1 100%; /* Each card takes full width on small screens */
+  flex: 1 1 100%;
+  /* Each card takes full width on small screens */
   max-width: 600px;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  width: 100px;
-  height: 100px;
-  padding: 2rem;
+.resource-card {
+  flex: 1 1 90%;
 }
 
 @media (min-width: 1024px) {
@@ -86,8 +78,8 @@ body,
   }
 
   .resource-card {
-    flex: 1 1 45%;
-    max-width: 45%;
+    flex: 1 1 30%;
+    width: 30%;
   }
 }
 </style>

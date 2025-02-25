@@ -3,7 +3,7 @@ import TeamSection from '../components/TeamSection.vue'
 </script>
 
 <template>
-  <div class="about">
+  <div class="page">
     <h1>Mission</h1>
     <p>
       something something something something something something something
@@ -24,21 +24,5 @@ import TeamSection from '../components/TeamSection.vue'
 h1 {
   margin-top: 20px;
   margin-bottom: 50px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: 64px 50px 0 50px;
-  /* align-items: flex-start; */
-}
-
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    /* align-items: center; */
-  }
 }
 </style>

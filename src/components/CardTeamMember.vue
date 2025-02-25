@@ -50,7 +50,8 @@ p {
 }
 
 .team-card {
-  width: 300px; /* Adjust width as needed */
+  width: 30%;
+  /* Adjust width as needed */
   border: 1px solid #ccc;
 
   border-radius: 10px;
@@ -64,33 +65,40 @@ p {
 .team-img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures image is square and covers the area */
+  object-fit: cover;
+  /* Ensures image is square and covers the area */
 }
 
 .team-info {
   padding: 15px;
 }
+
 .team-name {
   color: black;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0;
 }
+
 .team-position {
   font-style: italic;
   color: #777;
   margin: 5px 0;
 }
+
 .team-description {
   font-size: 0.95rem;
   color: #333;
   margin: 10px 0;
+  height: 2rem;
 }
+
 .team-link {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
 }
+
 .team-link:hover {
   text-decoration: underline;
 }

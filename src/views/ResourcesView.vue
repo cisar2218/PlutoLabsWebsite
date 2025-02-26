@@ -5,7 +5,7 @@ import CardResource from '@/components/CardResource.vue'
 </script>
 
 <template>
-  <div class="about">
+  <div class="page">
     <h1>PlutoFramework</h1>
 
     <div class="list">
@@ -18,12 +18,19 @@ import CardResource from '@/components/CardResource.vue'
 
       <CardResource class="resource-card" title="PlutoFramework Codebase"
         link="https://github.com/RostislavLitovkin/plutoframework"
-        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. ||| Are you ready? Use and Explore Pluto FrameWork. It's Open Source.">
+        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. ">
         <template #icon>
           <IconGithub />
         </template>
       </CardResource>
     </div>
+
+    <h1>Do you need a custom dApp?</h1>
+
+    <p>
+      We can build custom dApp for you as a service.
+      See <RouterLink to="/" class="nav-item">solutions</RouterLink>.
+    </p>
   </div>
 </template>
 
@@ -78,8 +85,8 @@ body,
   }
 
   .resource-card {
-    flex: 1 1 30%;
-    width: 30%;
+    flex: 1 1 20%;
+    width: 20%;
   }
 }
 </style>

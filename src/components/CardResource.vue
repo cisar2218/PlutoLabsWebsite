@@ -39,11 +39,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   height: 100%;
-  width: 20rem;
 }
 
 .card:hover {

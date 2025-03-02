@@ -5,7 +5,7 @@
       <h2 class="team-name">{{ name }}</h2>
       <p class="team-position">{{ position }}</p>
       <p class="team-description">{{ description }}</p>
-      <a :href="link" target="_blank" class="team-link">{{ linkdesc }}</a>
+      <a class="team-link" :href="link" target="_blank">{{ linkdesc }}</a>
     </div>
   </div>
 </template>
@@ -51,9 +51,8 @@ p {
 
 .team-card {
   width: 30%;
-  /* Adjust width as needed */
   border: 1px solid #ccc;
-
+  min-height: 24rem;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,6 +69,8 @@ p {
 }
 
 .team-info {
+  display: flex;
+  flex-direction: column;
   padding: 15px;
 }
 
@@ -97,6 +98,7 @@ p {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
+  padding-top: 1rem;
 }
 
 .team-link:hover {

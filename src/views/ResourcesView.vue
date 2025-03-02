@@ -9,16 +9,23 @@ import CardResource from '@/components/CardResource.vue'
     <h1>PlutoFramework</h1>
 
     <div class="list">
-      <CardResource class="resource-card" title="Getting Started" link="https://plutolabs.gitbook.io/plutoframework"
-        text="Get started by visiting the official documentation...">
+      <CardResource
+        class="resource-card"
+        title="Getting Started"
+        link="https://plutolabs.gitbook.io/plutoframework"
+        text="Get started by visiting the official documentation..."
+      >
         <template #icon>
           <IconDocumentation />
         </template>
       </CardResource>
 
-      <CardResource class="resource-card" title="PlutoFramework Codebase"
+      <CardResource
+        class="resource-card"
+        title="PlutoFramework Codebase"
         link="https://github.com/RostislavLitovkin/plutoframework"
-        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. ">
+        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. "
+      >
         <template #icon>
           <IconGithub />
         </template>
@@ -28,26 +35,13 @@ import CardResource from '@/components/CardResource.vue'
     <h1>Do you need a custom dApp?</h1>
 
     <p>
-      We can build custom dApp for you as a service.
-      See <RouterLink to="/" class="nav-item">solutions</RouterLink>.
+      We can build custom dApp for you as a service. See
+      <RouterLink to="/" class="nav-item">solutions</RouterLink>.
     </p>
   </div>
 </template>
 
 <style>
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  /* padding: 64px 50px 0 50px; */
-  width: 100% !important;
-  min-width: 100%;
-  max-width: none;
-  margin: 0;
-  /* align-items: flex-start; */
-}
-
 html,
 body,
 #app {
@@ -60,7 +54,7 @@ body,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
   padding-left: 3rem;
@@ -69,21 +63,10 @@ body,
 
 .resource-card {
   flex: 1 1 100%;
-  /* Each card takes full width on small screens */
   max-width: 600px;
 }
 
-.resource-card {
-  flex: 1 1 90%;
-}
-
 @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-
   .resource-card {
     flex: 1 1 20%;
     width: 20%;

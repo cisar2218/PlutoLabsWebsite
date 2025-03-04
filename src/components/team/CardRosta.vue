@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import CardTeamMember from '../../components/CardTeamMember.vue'
+import CardTeamMember from '@/components/CardTeamMember.vue'
+import rostaImage from '@/assets/photos/rosta.jpg'
 </script>
 
 <template>
   <CardTeamMember
     name="Rostislav Litovkin"
-    image="/white_logo.svg"
+    :image="rostaImage"
     position="CEO"
-    description="Blockchain developer and enthusiast."
     link="https://www.linkedin.com/in/janesmith"
     linkdesc="Portfolio"
   />

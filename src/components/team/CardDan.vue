@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import CardTeamMember from '../../components/CardTeamMember.vue'
+import CardTeamMember from '@/components/CardTeamMember.vue'
+import danImage from '@/assets/photos/dan.jpg'
 </script>
 
 <template>
   <CardTeamMember
     name="Daniel Vaculík"
-    image="/white_logo.svg"
+    :image="danImage"
     position="Marketing, sales, co-founder"
-    description="Big fella."
     link="https://www.linkedin.com/in/janesmith"
   />
 </template>

@@ -1,10 +1,9 @@
 <template>
   <div class="team-card">
     <img :src="image" alt="Team Member" class="team-img" />
-    <div class="team-info">
+    <div class="team-info-overlay">
       <h2 class="team-name">{{ name }}</h2>
       <p class="team-position">{{ position }}</p>
-      <p class="team-description">{{ description }}</p>
       <a class="team-link" :href="link" target="_blank">{{ linkdesc }}</a>
     </div>
   </div>
@@ -23,10 +22,6 @@ export default {
       required: true,
     },
     position: {
-      type: String,
-      required: true,
-    },
-    description: {
       type: String,
       required: true,
     },
@@ -50,22 +45,32 @@ p {
 }
 
 .team-card {
-  width: 30%;
+  width: 26vh;
   border: 1px solid #ccc;
-  min-height: 24rem;
-  border-radius: 10px;
+  height: 28rem;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #ffffffa4;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  position: relative;
 }
 
 .team-img {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  position: absolute;
   object-fit: cover;
-  /* Ensures image is square and covers the area */
+}
+
+.team-info-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.196);
+  padding: 15px;
+  height: 30%;
+  backdrop-filter: blur(2px);
 }
 
 .team-info {
@@ -75,7 +80,8 @@ p {
 }
 
 .team-name {
-  color: black;
+  color: var(--vt-c-text-dark-2);
+  text-shadow: 1px 1px #000000;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0;
@@ -87,13 +93,6 @@ p {
   margin: 5px 0;
 }
 
-.team-description {
-  font-size: 0.95rem;
-  color: #333;
-  margin: 10px 0;
-  height: 2rem;
-}
-
 .team-link {
   text-decoration: none;
   color: #007bff;
@@ -103,5 +102,11 @@ p {
 
 .team-link:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .team-card {
+    width: 26rem;
+  }
 }
 </style>

@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import TopBar from './components/TopBar.vue'
+import PageFooter from './components/PageFooter.vue'
 </script>
 
 <template>
   <div id="app-container">
     <TopBar />
     <RouterView />
+    <PageFooter />
   </div>
 </template>
 

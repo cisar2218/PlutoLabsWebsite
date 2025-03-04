@@ -5,24 +5,47 @@
     </div>
     <div class="card-content">
       <h2>Custom dApp Development</h2>
-      <h3>Why choose us?</h3>
+      <h3>Build the Future of Web3 with Pluto Labs</h3>
       <p>
-        Unlock the full potential of decentralized applications with our expert development
-        services. Tailored to your unique needs, we ensure a seamless and efficient process from
-        start to finish.
+        Unlock the full potential of decentralized applications with our expert-driven, tailor-made
+        development services. Whether you're launching a new dApp or enhancing an existing one, we
+        ensure a seamless, efficient, and secure development process from start to finish.
       </p>
-      <h3>How it works:</h3>
+      <h3>Why Choose Pluto Labs?</h3>
+      <ul>
+        <li>Custom Solutions: We adapt to your unique vision and technical needs.</li>
+        <li>Expert Developers: Our team specializes in cutting-edge blockchain technologies.</li>
+        <li>
+          Transparent Process: Clear timelines, upfront pricing, and regular progress updates.
+        </li>
+        <li>Seamless Deployment: We ensure your dApp is optimized for a smooth launch.</li>
+      </ul>
+
+      <h3>How It Works</h3>
       <ol>
-        <li>Share your design and features with the Pluto Labs team.</li>
-        <li>We'll propose a timetable and pricing.</li>
-        <li>Development begins! We'll keep you updated throughout the process.</li>
-        <li>Your custom dApp is ready for launch!</li>
+        <li>Share Your Vision: Tell us about your design, features, and goals.</li>
+        <li>Receive a Plan: We provide a detailed roadmap, including timelines and pricing.</li>
+        <li>Development in Action: Our team brings your dApp to life with regular updates.</li>
+        <li>Launch & Scale: Your custom dApp is ready for deployment and future growth!</li>
       </ol>
     </div>
   </div>
 </template>
 
 <style scoped>
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+ul li::before {
+  content: '🚀';
+  position: absolute;
+  left: 0;
+}
+
 .card {
   display: flex;
   flex-direction: row;

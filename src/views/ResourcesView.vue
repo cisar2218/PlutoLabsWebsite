@@ -13,7 +13,7 @@ import CardResource from '@/components/CardResource.vue'
         class="resource-card"
         title="Getting Started"
         link="https://plutolabs.gitbook.io/plutoframework"
-        text="Get started by visiting the official documentation..."
+        text="Get to know how to use PlutoFramework."
       >
         <template #icon>
           <IconDocumentation />
@@ -24,7 +24,7 @@ import CardResource from '@/components/CardResource.vue'
         class="resource-card"
         title="PlutoFramework Codebase"
         link="https://github.com/RostislavLitovkin/plutoframework"
-        text="Are you ready? Use and Explore Pluto FrameWork. It's Open Source. "
+        text="All in one framework for creating web3 mobile applications."
       >
         <template #icon>
           <IconGithub />
@@ -52,9 +52,8 @@ body,
 
 .list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
   width: 100%;
   padding-left: 3rem;
@@ -63,10 +62,16 @@ body,
 
 .resource-card {
   flex: 1 1 100%;
-  max-width: 600px;
+  max-width: 30rem;
+  width: 30rem;
 }
 
 @media (min-width: 1024px) {
+  .list {
+    justify-content: center;
+    flex-direction: row;
+  }
+
   .resource-card {
     flex: 1 1 20%;
     width: 20%;

@@ -43,6 +43,7 @@ export default {
   border: 1px solid #ddd;
   border-radius: 8px;
   height: 100%;
+  width: 30rem;
 }
 
 .card:hover {

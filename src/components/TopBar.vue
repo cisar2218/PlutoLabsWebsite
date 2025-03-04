@@ -1,13 +1,25 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 
-const isMenuOpen = ref(false);
+const isMenuOpen = ref(false)
+const router = useRouter()
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-</script>
+  isMenuOpen.value = !isMenuOpen.value
+}
 
+const hideMenu = () => {
+  isMenuOpen.value = false
+}
+
+onMounted(() => {
+  router.afterEach(() => {
+    hideMenu()
+  })
+})
+</script>
 
 <template>
   <header class="topbar">
@@ -24,7 +36,7 @@ const toggleMenu = () => {
       <span></span>
     </div>
 
-    <nav class="nav-links" :class="{ 'active': isMenuOpen }">
+    <nav class="nav-links" :class="{ active: isMenuOpen }">
       <!-- Navigation Links -->
       <RouterLink to="/" class="nav-item">Solutions</RouterLink>
       <RouterLink to="/resources" class="nav-item">Resources</RouterLink>
@@ -34,27 +46,19 @@ const toggleMenu = () => {
 </template>
 
 <style scoped>
-/* Basic Styling for Top Bar */
 .topbar {
   position: fixed;
-  /* Fixes the navbar at the top of the page */
   top: 0;
-  /* Aligns it to the top of the page */
   left: 0;
-  /* Aligns it to the left of the page */
   width: 100%;
-  /* Makes the navbar span the entire width */
   padding: 1rem 2rem;
   z-index: 1000;
-  /* Ensures the navbar stays on top of other elements */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #282c34;
-  /* Dark background */
   color: white;
 }
-
 
 .logo {
   display: flex;
@@ -63,7 +67,6 @@ const toggleMenu = () => {
 
 .logo img {
   width: 40px;
-  /* Adjust the size of your logo */
   height: 40px;
   margin-right: 10px;
 }
